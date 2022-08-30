@@ -2,22 +2,30 @@
 """
 – When you need a logical association between a key:value pair.
 """
-
-student = {"name": "vamsi", "age": "25 years", "college": "abc-college"}
+student_01 = {"name": "Moses", "age": "45 years", "univercity": "John-School-of-Criminal_justice"}
+student_02 = {"name": "vamsi", "age": "25 years", "college": "abc-college"}
 fruits = {"apple": 5, "banana": 3.50, "watermelon": 2.75}
 friends = {"class-1": ["david", "ricci"], "class-2": ["john", "matheus"]}
 
 # print dictionary
 print('\n # print dictionary')
-print(student)
+print(student_01)
+print(student_02)
 print(fruits)
 print(friends)
 
 # access dictionary items
 print('\n # access dictionary items')
-print(student["name"])
+print(student_01["name"])
+print(student_02["name"])
+print(student_01["age"])
+print(student_02["age"])
+print(student_01["univercity"])
+print(student_02["college"])
 print(fruits.get("apple"))
-print(friends["class-2"])
+print(fruits.get("watermelon"))
+
+
 
 # check if key exists in a dictionary
 print('\n # check if key exists in a dictionary')
