@@ -1,3 +1,4 @@
+
 # age = 20
 # age = 30
 # price = 19.50
@@ -17,6 +18,8 @@
 #========================================
 # String and numbers
 #========================================
+# Code[1]
+#===========
 
 # print(20)    # =>int
 # print(20.5)   # =>float
@@ -28,7 +31,9 @@
 
 # --Different ways to write a python code to Calculate how many minutes in 20 days
 #=================================================================================
-
+#========================================
+# Code[2]
+#===========
 # print(20 * 24 * 60)
 # print("20 days are XXX minutes")
 # # print("20 days are" + XXX + "minutes")
@@ -45,7 +50,9 @@
 #---------------------------------------------------------------------------------
 # creating custom and descriptive variables when writing your code
 #=================================================================================
-
+#========================================
+# Code[3]
+#===========
 # calculation_to_hours = 24
 # calculation_to_minutes = 24 * 60
 # calculation_to_seconds = 24 * 60 * 60
@@ -71,7 +78,9 @@
 #=============================================================================================================
 # How to create functions when writing python code
 #=============================================================================================================
-
+#========================================
+# Code[4]
+#===========
 # calculation_to_hours = 24
 # calculation_to_minutes = 24 * 60
 # calculation_to_seconds = 24 * 60 * 60
@@ -88,7 +97,9 @@
 #
 # days_to_unit()
 #------------------------------------------------------------------------------------------------------------------
-
+#========================================
+# Code[5]
+#===========
 # calculation_to_hours = 24
 # calculation_to_minutes = 24 * 60
 # calculation_to_seconds = 24 * 60 * 60
@@ -132,6 +143,9 @@
 #==================================================================================================================
 # You will get an error if you do not give your function a value after making your code dynamic
 #------------------------------------------------------------------------------------------------------------------
+#========================================
+# Code[6]
+#===========
 # calculation_to_hours = 24
 # name_of_unit_hours = "hours"
 #
@@ -146,7 +160,9 @@
 #=================================================================================================================
 # Dynamic function === Avoiding Hard Coding === using parameter to call the variables
 #=================================================================================================================
-
+#========================================
+# Code[7]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -164,7 +180,9 @@
 # ---Global Scope = variables available from within any scope
 # ---Local Scope = variables created inside function can only be used inside of that function
 #=================================================================================================================
-
+#========================================
+# Code[8]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -187,7 +205,9 @@
 #---------------------------------------------------------------------------------------------------------------------
 # The Example below has 1 [Global variable] and 2 [Local or internal variables]
 #=====================================================================================================================
-
+#========================================
+# Code[9]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -214,7 +234,9 @@
 # User input
 #================================================================
 #======================================================================================================================
-
+#==========================================
+# Code[10]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -233,7 +255,9 @@
 # with return value function, you need to create a variable the equal function and then print the variable
 #----------------------------------------------
 #=====================================================================================================================
-
+#========================================
+# Code[11]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -245,7 +269,9 @@
 # my_ver = days_to_units(20)
 # print(my_ver)
 #--------------------------------------------------------------------------------------------------------------------
-
+#========================================
+# Code[12]
+#===========
 # calculation_to_hours = 24   # Global and custom variables
 # name_of_unit_hours = "hours"  # Global and custom variables
 #
@@ -265,7 +291,9 @@
 # Conditionals (if / else) & Boolean Data Type || We want avoid Invalid user input by placing restriction on user input
 # Conditionals === Expressions that evaluate to either true or false
 #---------------------------------------------------------------------------------------------------------------------
-######################################################################################################################
+#========================================
+# Code[13]
+#===========
 # # Equals: a == b
 # # Not Equals: a != b
 # # Less than: a < b
@@ -305,25 +333,201 @@
 # MORE USER INPUT VALIDATION
 #-----------------------------------------
 #===================================================================================================================
+#========================================
+# Code[14]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     condition_check = num_of_days > 0  # use this to check data type
+#     print(type(condition_check))   # This called nested function
+#     print(num_of_days > 0)  # printing num_of_day >0 here will show if the user input is True of False
+#     if num_of_days > 0:    # here we are using a conditional function to prevent the user from using a negative number.
+#         return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#     elif num_of_days == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#         return "You have entered a 0, please enter a valid positive number"
+#     else:    # use the conditional else to return a message to the user  # We also don't need the else
+#     # condition because isdigit function also filtered out negative numbers.
+#         return "No conversion for a negative number, please enter a positive number"
+#
+#
+# user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+#
+# if user_input.isdigit():  # Placing this condition here prevents users from entering a text or a float
+#     user_input_number = int(user_input)  # This code can be run without this line
+#     calculated_value = days_to_units(user_input_number)
+#     print(calculated_value)
+# else:
+#     print("Your input is not a valid number, please enter a valid number")
 
+#======================================================================================================================
+#-----------------------------------------------------------
+# CLEAN UP OUR CODE === A BETTER WAY TO WRITE THE ABOVE CODE
+#-----------------------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[15]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     if num_of_days > 0:    # here we are using a conditional function to prevent the user from using a negative number.
+#         return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#     elif num_of_days == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#         return "You have entered a 0, please enter a valid positive number"
+#
+#
+# def validate_and_execute():
+#     if user_input.isdigit():  # Placing this condition here prevents users from entering a text or a float
+#         user_input_number = int(user_input)  # This code can be run without this line
+#         calculated_value = days_to_units(user_input_number)
+#         print(calculated_value)
+#     else:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+# validate_and_execute()
+
+
+#======================================================================================================================
+#-------------------------------------------------------
+# ====== NESTED If ....Else
+#-------------------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[16]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     if user_input.isdigit():  # Placing this condition here prevents users from entering a text or a float
+#         user_input_number = int(user_input)  # This code can be run without this line
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#     else:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+# validate_and_execute()
+
+#======================================================================================================================
+#----------------------------------------------------
+# ===== Error Handling with try / except =====#
+#----------------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[17]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     try: # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(user_input)   # This code can be run without this line
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+# validate_and_execute()
+
+#======================================================================================================================
+#----------------------------------------------------
+# ===== Python While Loops =====#
+#----------------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[18]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     try: # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(user_input)   # This code can be run without this line
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+# while True:
+#     user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+#     validate_and_execute()
+
+#======================================================================================================================
+#-------------------------------------
+# A Way to let users exit the program
+#-------------------------------------
+#======================================================================================================================
+#========================================
+# Code[19]
+#===========
 calculation_to_hours = 24   # Global and custom variables
 name_of_unit_hours = "hours"  # Global and custom variables
 
 
 def days_to_units(num_of_days):
-    condition_check = num_of_days > 0  # use this to check data type
-    print(type(condition_check))   # This called nested function
-    print(num_of_days > 0)  # printing num_of_day >0 here will show if the user input is True of False
-    if num_of_days > 0:    # here we are using a conditional function to prevent the user from using a negative number.
-        return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
-    elif num_of_days == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
-        return "You have entered a 0, please enter a valid positive number"
-    else:    # use the conditional else to return a message to the user
-        return "No conversion for a negative number, please enter a positive number"
+    return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
 
 
-user_input = int(input("Hey User, enter a number of days and i will convert it to hours!\n"))  # convert here with int
-user_input_number = int(user_input)  # This code can be run without this line
+def validate_and_execute():
+    try: # Placing this condition here prevents users from entering a text or a float
 
-calculated_value = days_to_units(user_input)
-print(calculated_value)
+        user_input_number = int(user_input)   # This code can be run without this line
+        if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+            calculated_value = days_to_units(user_input_number)
+            print(calculated_value)
+        elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+            print("You have entered a 0, please enter a valid positive number")
+        else:
+            print("No conversion for a negative number, please enter a positive number")
+
+    except ValueError:
+        print("Your input is not a valid number, please enter a valid number")
+
+
+user_input = ""
+while user_input != "exit":
+    user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+    validate_and_execute()
