@@ -531,3 +531,289 @@ user_input = ""
 while user_input != "exit":
     user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
     validate_and_execute()
+    
+#======================================================================================================================
+#-----------------------------------------------
+# ===List & For Loop====# List for loop allows you to enter multiple values at one time instead of doing so one by one=#
+#-----------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[20]
+#===========
+# calculation_to_hours = 24   # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     try: # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(num_of_days_element)   # This code can be run without this line
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input("Hey User, enter number of days as a comma separated list and i will convert it to hours!\n")
+#     for num_of_days_element in user_input.split(", "):
+#         validate_and_execute()
+#======================================================================================================================
+#-----------------------------------------------
+# ===List & For Loop====# List & for loop Continue
+#-----------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[21]
+#===========
+# calculation_to_hours = 24  # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     try:  # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(num_of_days_element)  # This code can be run without this line
+#
+#         # This part of the code is use to require users to enter only positive numbers
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+#     print(type(user_input.split(", ")))
+#     print(user_input.split(", "))
+#     for num_of_days_element in user_input.split(", "):
+#         validate_and_execute()
+
+#======================================================================================================================
+#-----------------------------------------------
+# ===List & For Loop====# List & for loop Continue
+#-----------------------------------------------
+#======================================================================================================================
+#========================================
+# Code[22]
+#===========
+# calculation_to_hours = 24  # Global and custom variables
+# name_of_unit_hours = "hours"  # Global and custom variables
+#
+#
+# def days_to_units(num_of_days):
+#     return f"{num_of_days} days are {num_of_days * calculation_to_hours} {name_of_unit_hours}"
+#
+#
+# def validate_and_execute():
+#     try:  # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(num_of_days_element)  # This code can be run without this line
+#
+#         # This part of the code is use to require users to enter only positive numbers
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number)
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input("Hey User, enter a number of days and i will convert it to hours!\n")  # convert here with int
+#     list_of_days = user_input.split(", ")
+#     print(list_of_days)
+#     print(set(list_of_days))
+#
+#     print(type(list_of_days))
+#     print(type(set(list_of_days)))
+#
+#     for num_of_days_element in set(list_of_days):
+#         validate_and_execute()
+
+# ======================================================================================================================
+# -----------------------------------------------
+# ===Basic Set Operations and Syntax ====#
+# -----------------------------------------------
+# ======================================================================================================================
+# ========================================
+# Code[23]
+# ===========
+# my_set = {"January", "February", "March", "April", "May", "June", "February"}
+# for element in my_set:
+#     print(element)
+#
+# my_set.add("August")
+# print(my_set)
+# my_set.remove("April")
+# print(my_set)
+#
+# my_list = ["January", "February", "March", "April", "May", "June", "February"]
+# my_list.remove("February")
+# print(my_list)
+# my_list.append("February")
+# print(my_list)
+
+# ======================================================================================================================
+# ---------------------------------------------------------------------------------------------------------------
+# ===Built in Function ====# Custom Function ==# Function #fUNCTIONS CALLED DIRECTLY ON A VALUE ===#
+# ===Different Data Type ===#  # ===All the data type we have used thus far ===#  # ===Different Data Type ===#
+# --------------------------------------------------------------------------------------------------------------
+# ======================================================================================================================
+# ========================================
+# Code[24.]
+# ===========
+# DIFFERENT TYPES OF FUNCTIONS USED IN OUR LEARNING THUS FAR:
+
+# BUILT IN FUNCTIONS:
+# print()
+# input()
+# int()
+# set()
+
+# CUSTOM FUNCTIONS:
+# def days_to_units():
+# def validate_and_execute():
+
+# fUNCTIONS CALLED DIRECTLY ON A VALUE:
+# The difference between this function and the other
+# built-in function: with this type of function, each
+# data type have its own type or list of functions.
+
+# "test".split()
+# "February".capitalize()
+# "February".find()
+# [2, 3, 9,].index()
+# [2, 3, 9,].count()
+# [2, 3, 9,].append()
+
+# DIFFERENT DATA TYPE:
+
+# str_message = "enter a value"
+# int_days = 20
+# float_price = 9.99
+# bool_valid_number = True
+# boll_exit_input = False
+# list_of_days = [20, 30, 40, 50, 60]
+# list_of_months = ["January", "February", "March"]
+# set_of_days = {10, 20, 30, 40}
+# dictionary_days_and_unit = {"days": 10, "unit": "hours"}
+
+
+# ======================================================================================================================
+# ---------------------------------------------------------------------------------------------------
+# ===Dictionary Data Type ===#
+# ---------------------------------------------------------------------------------------------------
+# ======================================================================================================================
+# ========================================
+# Code[25.]
+# ===========
+
+# def days_to_units(num_of_days, conversion_unit):
+#     if conversion_unit == "hours":
+#         return f"{num_of_days} days are {num_of_days * 24} hours"
+#     elif conversion_unit == "minutes":
+#         return f"{num_of_days} days are {num_of_days * 24 * 60} minutes"
+#     else:
+#         return "unsupported unit"
+#
+#
+# def validate_and_execute():
+#     try:  # Placing this condition here prevents users from entering a text or a float
+#
+#         user_input_number = int(days_and_unit_dictionary["days"])  # This code can be run without this line
+#
+#         # This part of the code is use to require users to enter only positive numbers
+#         if user_input_number > 0:  # This conditional function to prevent the user from using a negative number.
+#             calculated_value = days_to_units(user_input_number, days_and_unit_dictionary["unit"])
+#             print(calculated_value)
+#         elif user_input_number == 0:  # this condition is used to return a message to the user if they enter a 0 digit.
+#             print("You have entered a 0, please enter a valid positive number")
+#         else:
+#             print("No conversion for a negative number, please enter a positive number")
+#
+#     except ValueError:
+#         print("Your input is not a valid number, please enter a valid number")
+#
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input("Hey User, enter a number of days and conversion unit!\n")  # convert here with int
+#     days_and_unit = user_input.split(":")
+#     print(days_and_unit)
+#     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
+#     print(days_and_unit_dictionary)
+#     print(type(days_and_unit_dictionary))
+#     validate_and_execute()
+# ----------------------------------------------------------------------------------------------------------------------
+
+# my_list = ["10", "20", "100", "200"]
+# print(my_list[1])
+#
+# my_dictionary = {"days": 100, "unit": "hours", "message": "Look, I'm learning Python"}
+# print(my_dictionary["message"])
+
+# ======================================================================================================================
+# ---------------------------------------------------------------------------------------------------
+# #===MODULES===#  #===MODULES===#  #===MODULES===#  #===MODULES===#  #===MODULES===#  #===MODULES===#
+# ---------------------------------------------------------------------------------------------------
+# ======================================================================================================================
+# ========================================
+# Code[26.]
+# ===========
+# This is one way of calling or referencing modules
+# import helper
+#
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input(helper.user_input_message)  # convert here with int
+#     days_and_unit = user_input.split(":")
+#     print(days_and_unit)
+#     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
+#     print(days_and_unit_dictionary)
+#     print(type(days_and_unit_dictionary))
+#     helper.validate_and_execute(days_and_unit_dictionary)
+
+#-----------------------------------------------------------------------------------------------------------------------
+# ===The above module can also be writen this way
+#-----------------------------------------------------------------------------------------------------------------------
+# from helper import validate_and_execute, user_input_message
+# # from helper import *   # The above function can also be writen this way
+# user_input = ""
+# while user_input != "exit":
+#     user_input = input(user_input_message)  # convert here with int
+#     days_and_unit = user_input.split(":")
+#     print(days_and_unit)
+#     days_and_unit_dictionary = {"days": days_and_unit[0], "unit": days_and_unit[1]}
+#     print(days_and_unit_dictionary)
+#     print(type(days_and_unit_dictionary))
+#     validate_and_execute(days_and_unit_dictionary)
+
+#======================================================================================================================
